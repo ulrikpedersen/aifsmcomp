@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "valve"
+version = "0.1.0"
+description = "A Python project to simulate a pneumatically operated valve."
+authors = [
+  { name="Ulrik", email="ulrikkofoed@gmail.com" },
+]
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "--doctest-modules"
+testpaths = [
+    "tests",
+]
+
